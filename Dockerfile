@@ -4,7 +4,7 @@ FROM registry.hub.docker.com/library/centos:7
 MAINTAINER Christopher Nuland - <cjnuland@gmail.com>
 
 # install dependencies
-RUN yum -f update && yum -f install \
+RUN yum update && yum install \
   bash \
   git \
   nodejs \
