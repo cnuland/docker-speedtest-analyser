@@ -1,10 +1,10 @@
-FROM alpine:3.9
+FROM centos:7
 
 # greet me :)
 MAINTAINER Christopher Nuland - <cjnuland@gmail.com>
 
 # install dependencies
-RUN microdnf update && microdnf install \
+RUN yum -f update && yum -f install \
   bash \
   git \
   nodejs \
