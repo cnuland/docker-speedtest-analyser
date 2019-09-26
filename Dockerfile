@@ -1,10 +1,10 @@
 FROM alpine:3.9
 
 # greet me :)
-MAINTAINER Tobias Rös - <roes@amicaldo.de>
+MAINTAINER Christopher Nuland - <cjnuland@gmail.com>
 
 # install dependencies
-RUN yum update && yum install \
+RUN dnf update && dnf install \
   bash \
   git \
   nodejs \
