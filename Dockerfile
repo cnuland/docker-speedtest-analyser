@@ -4,7 +4,7 @@ FROM alpine:3.9
 MAINTAINER Christopher Nuland - <cjnuland@gmail.com>
 
 # install dependencies
-RUN dnf update && dnf install \
+RUN microdnf update && microdnf install \
   bash \
   git \
   nodejs \
