@@ -4,7 +4,7 @@ FROM registry.hub.docker.com/library/centos:7
 MAINTAINER Christopher Nuland - <cjnuland@gmail.com>
 
 # install dependencies
-RUN sudo yum update -y && sudo yum install -y \
+RUN  um update -y && yum install -y \
   epel-release \
   bash \
   git \
