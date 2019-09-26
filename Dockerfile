@@ -1,4 +1,4 @@
-FROM centos:7
+FROM registry.hub.docker.com/library/centos:7
 
 # greet me :)
 MAINTAINER Christopher Nuland - <cjnuland@gmail.com>
