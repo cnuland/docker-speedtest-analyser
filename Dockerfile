@@ -42,6 +42,8 @@ RUN npm install -g yarn && cd /var/www/html/ && yarn install
 EXPOSE 80
 EXPOSE 443
 
+
 RUN chown -R nginx:nginx /var/www/html/
 RUN chmod +x /var/www/html/config/run.sh
+USER 1001
 ENTRYPOINT ["/var/www/html/config/run.sh"]
