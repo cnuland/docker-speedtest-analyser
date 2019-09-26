@@ -4,7 +4,7 @@ FROM alpine:3.9
 MAINTAINER Tobias Rös - <roes@amicaldo.de>
 
 # install dependencies
-RUN apk update && apk add \
+RUN yum update && uim install \
   bash \
   git \
   nodejs \
