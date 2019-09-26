@@ -4,16 +4,16 @@ FROM registry.hub.docker.com/library/centos:7
 MAINTAINER Christopher Nuland - <cjnuland@gmail.com>
 
 # install dependencies
-RUN yum update -y && yum install -y \
+RUN sudo yum update -y && sudo yum install -y \
+  epel-release \
   bash \
   git \
   nodejs \
   nodejs-npm \
   nginx \
   nginx-mod-http-lua \
-  python3 \
-  py-pip
-
+  python34 \
+  python34-setuptools
 
 RUN pip install speedtest-cli
 
